@@ -1,0 +1,20 @@
+const mongoose = require('mongoose');
+
+const votos_sugerencias = new mongoose.Schema({
+    messageID: String,
+    si: {type: Array, default: []},
+    no: {type: Array, default: []},
+    autor: {type: String, default: ""}
+})
+
+const model = mongoose.model("votos_sugerencias", votos_sugerencias);
+
+module.exports = model;
+
+
+/*
+╔═════════════════════════════════════════════════════╗
+║       || - || Desarrollado por L4nder     || - ||   ║
+║    ----------| discord.gg/ecruXB7MGw |----------    ║
+╚═════════════════════════════════════════════════════╝
+*/
